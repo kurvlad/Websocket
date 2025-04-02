@@ -1,0 +1,20 @@
+.messages {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: rgb(250, 243, 235);
+    padding: 10px;
+}
+
+.message_container {
+    border: 2px solid rgb(50, 171, 247);
+    border-radius: 5px;
+    background-color: white;
+    min-height: 80px;
+    padding: 10px;
+    word-wrap: break-word;
+}
