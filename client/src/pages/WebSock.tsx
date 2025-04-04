@@ -54,11 +54,17 @@ const WebSock: FC = () => {
             setMessages(prev => [message, ...prev])
         };
         socket.current.onclose = (): void => {
-            console.log('Socket is closed')
+            console.log('Socket is closed');
         };
         socket.current.onerror = (): void => {
             console.log('Socket error')
         }
+    }
+
+    const closeWebsocket = () => {
+        socket.current?.close()
+        setConnected(false);
+        setUsername('')
     }
 
 
@@ -92,6 +98,7 @@ const WebSock: FC = () => {
                         placeholder="Ваше сообщение" />
                     <button onClick={sendMessage}>Отправить сообщение</button>
                 </form>
+                <button onClick={closeWebsocket}>Выйти</button>
             </div>
             <div className={styles.messages}>
                 {messages.map(mess => {
@@ -101,6 +108,7 @@ const WebSock: FC = () => {
                     </div>
                 })}
             </div>
+
         </div>)
 }
 

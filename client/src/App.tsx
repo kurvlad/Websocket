@@ -1,10 +1,11 @@
 import './App.css'
-import WebSock from './pages/WebSock'
+import Whatsapp from './pages/Whatsapp'
 
 function App() {
   return (
     <>
-      <WebSock />
+      {/* <WebSock /> */}
+      <Whatsapp />
     </>
   )
 }
