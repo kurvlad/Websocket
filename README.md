@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/cf176960-cd39-4332-a048-87463ed9bd7f)1) установить зависимости в каждом проекте 
+1) установить зависимости в каждом проекте 
 I. 
 cd client
 npm install
